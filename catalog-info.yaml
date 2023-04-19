@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "my-quarkus-app-2"
+  annotations:
+    argocd/app-name: my-quarkus-app-2-dev
+    backstage.io/kubernetes-id: my-quarkus-app-2
+    github.com/project-slug: ohthreeinc/backstage-sample-quarkus-app-2
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - java
+    - quarkus
+  links:
+    - url: https://devspaces.apps.cluster-78bw6.78bw6.sandbox2618.opentlc.com/#https://github.com/ohthreeinc/backstage-sample-quarkus-app-2?che-editor=che-incubator/che-code/insiders&devfilePath=.devfile-vscode.yaml
+      title: CodeReady Workspaces (VS Code)
+      icon: web
+    - url: https://devspaces.apps.cluster-78bw6.78bw6.sandbox2618.opentlc.com/#https://github.com/ohthreeinc/backstage-sample-quarkus-app-2?che-editor=che-incubator/che-idea/next&devfilePath=.devfile-intellij.yaml
+      title: CodeReady Workspaces (JetBrains IntelliJ)
+      icon: web
+spec:
+  type: service
+  lifecycle: production
+  owner: "Quarkus-Team"
